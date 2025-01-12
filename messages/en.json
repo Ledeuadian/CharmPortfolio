@@ -1,6 +1,6 @@
 {
     "person": {
-        "role": "Design Engineer"
+        "role": "Virtual Assistant"
     },
     "newsletter": {
         "title": "Subscribe to {firstName}'s Newsletter",
@@ -11,7 +11,7 @@
         "label": "Home",
         "title": "{name}'s Portfolio",
         "description": "Portfolio website showcasing my work as a {role}",
-        "headline": "Design engineer and builder",
+        "headline": "CSR Advisor and VA Specialist",
         "subline": "I'm Selene, a design engineer at FLY, where I craft intuitive user experiences. After hours, I build my own projects."
     },
     "about": {
@@ -20,7 +20,7 @@
         "description": "Meet {name}, {role} from {location}",
         "intro": {
             "title": "Introduction",
-            "description": "Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology."
+            "description": "Hello! I’m Charm, an outstanding Customer Support Specialist with a proven track record of delivering exceptional service and consistently exceeding performance benchmarks. With a passion for problem-solving and a customer-first mindset, I specialize in creating seamless and memorable experiences for clients."
         },
         "work": {
             "title": "Work Experience",

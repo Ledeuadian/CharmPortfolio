@@ -116,24 +116,8 @@ export const Header = () => {
                                     selected={pathname === "/about"}>
                                     <Flex paddingX="2" hide="s">{about.label}</Flex>
                                 </ToggleButton>
-                            )}
-                            { routes['/work'] && (
-                                <ToggleButton
-                                    prefixIcon="grid"
-                                    href={`/${params?.locale}/work`}
-                                    selected={pathname.startsWith('/work')}>
-                                    <Flex paddingX="2" hide="s">{work.label}</Flex>
-                                </ToggleButton>
-                            )}
-                            { routes['/blog'] && (
-                                <ToggleButton
-                                    prefixIcon="book"
-                                    href={`/${params?.locale}/blog`}
-                                    selected={pathname.startsWith('/blog')}>
-                                    <Flex paddingX="2" hide="s">{blog.label}</Flex>
-                                </ToggleButton>
-                            )}
-                            { routes['/gallery'] && (
+                            )}  
+                            {/* { routes['/gallery'] && (
                                 <ToggleButton
                                     prefixIcon="gallery"
                                     href={`/${params?.locale}/gallery`}
@@ -141,6 +125,14 @@ export const Header = () => {
                                     <Flex paddingX="2" hide="s">{gallery.label}</Flex>
                                 </ToggleButton>
                             )}
+                              { routes['/blog'] && (
+                                <ToggleButton
+                                    prefixIcon="book"
+                                    href={`/${params?.locale}/blog`}
+                                    selected={pathname.startsWith('/blog')}>
+                                    <Flex paddingX="2" hide="s">{blog.label}</Flex>
+                                </ToggleButton>
+                            )} */}
                         </Flex>
                     </Flex>
                 </Flex>
