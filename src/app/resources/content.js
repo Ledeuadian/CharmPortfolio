@@ -97,6 +97,26 @@ const about = {
             }
         ]
     },
+    photoGallery: {
+        display: true,
+        title: 'Certificates',
+        description: 'A collection of Certificates of achievements',
+        images: [
+            { src: '/images/gallery/img-01.jpg', alt: 'Gallery Image 1' },
+            { src: '/images/gallery/img-02.jpg', alt: 'Gallery Image 2' },
+            { src: '/images/gallery/img-03.jpg', alt: 'Gallery Image 3' },
+            { src: '/images/gallery/img-04.jpg', alt: 'Gallery Image 4' },
+            { src: '/images/gallery/img-05.jpg', alt: 'Gallery Image 5' },
+            { src: '/images/gallery/img-06.jpg', alt: 'Gallery Image 6' },
+            { src: '/images/gallery/img-07.jpg', alt: 'Gallery Image 7' },
+            { src: '/images/gallery/img-08.jpg', alt: 'Gallery Image 8' },
+            { src: '/images/gallery/img-09.jpg', alt: 'Gallery Image 9' },
+            { src: '/images/gallery/img-10.jpg', alt: 'Gallery Image 10' },
+            { src: '/images/gallery/img-11.jpg', alt: 'Gallery Image 11' },
+            { src: '/images/gallery/img-12.jpg', alt: 'Gallery Image 12' },
+            { src: '/images/gallery/img-13.jpg', alt: 'Gallery Image 13' }
+        ]
+    },
 }
 
 const blog = {

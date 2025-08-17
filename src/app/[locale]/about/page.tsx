@@ -1,4 +1,4 @@
-import { Avatar, Button, Flex, Heading, Icon, IconButton, SmartImage, Tag, Text } from '@/once-ui/components';
+import { Avatar, Button, Flex, Heading, Icon, IconButton, SmartImage, Tag, Text, Carousel } from '@/once-ui/components';
 import { baseURL, renderContent } from '@/app/resources';
 import TableOfContents from '@/components/about/TableOfContents';
 import styles from '@/components/about/about.module.scss'
@@ -54,6 +54,11 @@ export default function About(
             title: about.work.title,
             display: about.work.display,
             items: about.work.experiences.map(experience => experience.company)
+        },
+        { 
+            title: about.photoGallery.title,
+            display: about.photoGallery.display,
+            items: []
         }
     ]
     return (
@@ -248,6 +253,34 @@ export default function About(
                                         )}
                                     </Flex>
                                 ))}
+                            </Flex>
+                        </>
+                    )}
+
+                    { about.photoGallery.display && (
+                        <>
+                            <Heading
+                                as="h2"
+                                id={about.photoGallery.title}
+                                variant="display-strong-s"
+                                marginBottom="m">
+                                {about.photoGallery.title}
+                            </Heading>
+                            <Text
+                                variant="body-default-m"
+                                onBackground="neutral-weak"
+                                marginBottom="l">
+                                {about.photoGallery.description}
+                            </Text>
+                            <Flex
+                                fillWidth
+                                marginBottom="40">
+                                <Carousel
+                                    images={about.photoGallery.images}
+                                    indicator="thumbnail"
+                                    aspectRatio="16 / 9"
+                                    sizes="(max-width: 768px) 100vw, 80vw"
+                                />
                             </Flex>
                         </>
                     )}

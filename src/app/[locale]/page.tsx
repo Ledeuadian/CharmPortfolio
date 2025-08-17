@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Heading, Flex, Text, Button,  Avatar, RevealFx, Arrow } from '@/once-ui/components';
+import { Heading, Flex, Text, Button, Avatar, RevealFx, Arrow, SmartImage } from '@/once-ui/components';
 // import { Projects } from '@/components/work/Projects';
 
 import { baseURL, routes, renderContent } from '@/app/resources'; 
@@ -8,6 +8,7 @@ import { baseURL, routes, renderContent } from '@/app/resources';
 // import { Posts } from '@/components/blog/Posts';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import styles from './home.module.scss';
 
 export async function generateMetadata(
 	{params: {locale}}: { params: { locale: string }}
@@ -119,6 +120,51 @@ export default function Home(
 											<Arrow trigger="#about"/>
 									</Flex>
 								</Button>
+							</Flex>
+						</RevealFx>
+						
+						{/* Cover Images Gallery */}
+						<RevealFx translateY="16" delay={0.6}>
+							<Flex 
+								fillWidth 
+								paddingTop="xl">
+								<Flex 
+									className={styles.coverGallery}
+									fillWidth>
+									<Flex 
+										className={styles.coverImage}>
+										<SmartImage
+											src="/images/gallery/Cover1.jpg"
+											alt="Cover 1"
+											sizes="(max-width: 768px) 33vw, 25vw"
+											radius="m"
+											aspectRatio="4 / 3"
+											style={{objectFit: 'cover'}}
+										/>
+									</Flex>
+									<Flex 
+										className={styles.coverImage}>
+										<SmartImage
+											src="/images/gallery/Cover2.jpg"
+											alt="Cover 2"
+											sizes="(max-width: 768px) 33vw, 25vw"
+											radius="m"
+											aspectRatio="4 / 3"
+											style={{objectFit: 'cover'}}
+										/>
+									</Flex>
+									<Flex 
+										className={styles.coverImage}>
+										<SmartImage
+											src="/images/gallery/Cover3.jpg"
+											alt="Cover 3"
+											sizes="(max-width: 768px) 33vw, 25vw"
+											radius="m"
+											aspectRatio="4 / 3"
+											style={{objectFit: 'cover'}}
+										/>
+									</Flex>
+								</Flex>
 							</Flex>
 						</RevealFx>
 					</Flex>

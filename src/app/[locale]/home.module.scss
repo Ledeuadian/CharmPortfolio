@@ -1,0 +1,31 @@
+.coverImage {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    flex: 1;
+    height: 200px;
+    
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        z-index: 1;
+        position: relative;
+    }
+}
+
+.coverGallery {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    width: 100%;
+    
+    @media (max-width: 768px) {
+        gap: 0;
+        height: 150px;
+        
+        .coverImage {
+            height: 150px;
+        }
+    }
+}
